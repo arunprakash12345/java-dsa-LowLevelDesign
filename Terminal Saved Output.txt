@@ -1,0 +1,48 @@
+Last login: Mon Sep  8 22:33:55 on ttys004
+arunprakashg@Aruns-MacBook-Air ~ % java -version
+java version "21.0.7" 2025-04-15 LTS
+Java(TM) SE Runtime Environment (build 21.0.7+8-LTS-245)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.7+8-LTS-245, mixed mode, sharing)
+arunprakashg@Aruns-MacBook-Air ~ % javac -version
+javac 21.0.7
+arunprakashg@Aruns-MacBook-Air ~ % cd desktop
+arunprakashg@Aruns-MacBook-Air desktop % mkdir JavaCodes
+arunprakashg@Aruns-MacBook-Air desktop % cd JavaCodes
+arunprakashg@Aruns-MacBook-Air JavaCodes % nano helloWorld.java
+
+
+
+
+
+
+
+
+
+
+
+
+
+  UW PICO 5.09                 File: helloWorld.java                  Modified  
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, Java on Mac!");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos   
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell  
