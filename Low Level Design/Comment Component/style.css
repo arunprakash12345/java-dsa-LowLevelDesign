@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f6f8ff, #eef1ff);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+/* Main container */
+.comment-container {
+    width: 600px;
+}
+
+/* Comment card */
+.comment {
+    background-color: #ffffff;
+    padding: 1rem 1.2rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Subtle hover lift */
+.comment:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Comment text */
+.title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.4rem;
+}
+
+/* Reply action */
+.reply {
+    color: #2563eb;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.reply:hover {
+    text-decoration: underline;
+}
+
+/* Reply input box */
+.comment-reply-container {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.8rem;
+    margin-left: 2.5rem;
+}
+
+/* Input */
+.input {
+    flex: 1;
+    padding: 0.6rem 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* Button */
+.btn {
+    background-color: #2563eb;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+    transform: translateY(-1px);
+}
+
+/* Nested comments */
+.comment:not(:first-child) {
+    margin-left: 2.5rem;
+    margin-top: 0.8rem;
+    border-left: 3px solid #e5e7eb;
+}
