@@ -1,0 +1,20 @@
+body{
+    box-sizing: border-box;
+    height: 100vh;
+}
+.box{
+    padding: 1.5rem;
+    border: 1px solid #222;
+}
+.black
+{
+    color: white;
+    background-color: #222;
+}
+.white{
+    color: #222;
+    background-color: white;
+}
+.yellow{
+    background-color: yellow;
+}
