@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Component</title>
+    <style>
+        body {
+            background-color: #E1E7EF;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .counter-container {
+            background-color: white;
+            box-shadow: #E1E7EF;
+            height: 350px;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 2 2 2 #E1E7EF;
+            text-align: center;
+        }
+
+        #count {
+            font-size: 4rem;
+            color: purple;
+            font-weight: 700;
+            margin: 24px;
+        }
+
+        #input {
+            height: 42px;
+            width: 300px;
+            border: 1px solid #d9d9d9;
+            border-radius: 5px;
+            font-size: 24px;
+            padding-left: 12px;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            margin-top: 24px;
+            margin-left: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #add {
+            background-color: #4F47E5;
+            color: white;
+        }
+
+        #subract {
+            background-color: #FA7315;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="counter-container">
+        <h1>Counter App</h1>
+        <p id="count">
+            0
+        </p>
+        <input type="number" id="input" value="0" />
+        <div class="buttons">
+            <button id="add">Add</button>
+            <button id="subract">Subract</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script>
+        const count = document.getElementById('count');
+        const add = document.getElementById('add');
+        const subract = document.getElementById('subract');
+        const reset = document.getElementById('reset');
+        const input = document.getElementById('input');
+
+        add.addEventListener("click", (event) => {
+            const updateValue = parseInt(input.value) || 1;
+            const currentValue = parseInt(count.innerText) || 0;
+            const newValue = currentValue + updateValue;
+            count.innerText = newValue;
+        });
+        subract.addEventListener("click", (event) => {
+            const updateValue = parseInt(input.value) || 1;
+            const currentValue = parseInt(count.innerText) || 0;
+            const newValue = currentValue - updateValue;
+            if (newValue >= 0)
+                count.innerText = newValue;
+        });
+        reset.addEventListener("click", (event) => {
+            input.value = 0;
+            count.innerText = 0;
+        });
+
+    </script>
+</body>
+
+</html>

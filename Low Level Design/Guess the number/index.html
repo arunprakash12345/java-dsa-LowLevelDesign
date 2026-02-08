@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+     <div class="container">
+        <p>I'm thinking of a number between 0 and 100. Can you guess it?</p>
+        <p>You have 10 guesses remaining.</p>
+        <div class="input-container">
+            <b class="label">Your guess (0-100):</b>
+            <input type="text" id="number-input" placeholder="Enter a number between 0 and 100" />
+            <div class="button-container">
+                <button id="submit">Submit</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="result">
+            <p class="temp-result">48 is too high!</p>
+            <p>your guesses: 12,48</p>
+        </div>
+     </div>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
