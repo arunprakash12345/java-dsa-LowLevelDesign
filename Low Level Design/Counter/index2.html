@@ -55,7 +55,7 @@
             color: white;
         }
 
-        #subract {
+        #subtract {
             background-color: #FA7315;
             color: white;
         }
@@ -71,14 +71,14 @@
         <input type="number" id="input" value="0" />
         <div class="buttons">
             <button id="add">Add</button>
-            <button id="subract">Subract</button>
+            <button id="subtract">Subract</button>
             <button id="reset">Reset</button>
         </div>
     </div>
     <script>
         const count = document.getElementById('count');
         const add = document.getElementById('add');
-        const subract = document.getElementById('subract');
+        const subract = document.getElementById('subtract');
         const reset = document.getElementById('reset');
         const input = document.getElementById('input');
 
@@ -88,7 +88,7 @@
             const newValue = currentValue + updateValue;
             count.innerText = newValue;
         });
-        subract.addEventListener("click", (event) => {
+        subtract.addEventListener("click", (event) => {
             const updateValue = parseInt(input.value) || 1;
             const currentValue = parseInt(count.innerText) || 0;
             const newValue = currentValue - updateValue;
