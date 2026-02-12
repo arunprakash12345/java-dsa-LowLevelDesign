@@ -2,15 +2,20 @@ body{
     background-color: #fafafa;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container{
     box-shadow: 5px 5px 10px #ebebeb;
     border-radius: 5px;
-    width: 30%;
+    width: 32%;
     padding: 1rem;
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: 1px solid #d9d9d9;
+    height: 350px;
 }
 .input-container
 {
@@ -56,6 +61,7 @@ body{
     border-radius:5px;
     padding: 10px;
     margin-top: 16px;
+    height: 70px;
 }
 .temp-result{
     font-size: 18px;
