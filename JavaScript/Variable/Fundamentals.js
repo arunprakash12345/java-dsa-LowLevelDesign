@@ -1,0 +1,1 @@
+"user script"; // was introduced in ES5, but not widely supported until ES6
