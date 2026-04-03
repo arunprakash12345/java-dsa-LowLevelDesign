@@ -8,9 +8,6 @@ starContainer.addEventListener("click", (event) => {
     fillStars(rating);
     addEmoji(rating);
 });
-
-
-
 starContainer.addEventListener("mouseover", () => {
     const target = event.target;
     const rating = parseInt(target.getAttribute("index"));
